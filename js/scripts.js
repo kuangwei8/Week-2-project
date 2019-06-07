@@ -13,17 +13,16 @@ $(document).ready(function(){
   var pink=  $("input[type=radio][name=color]:checked" ).val();
 
 
+  if (personality === "yes" && closet === "yes" ) {
+   location.replace("python.html");}
 
-
-  // if (personality === "yes" && closet === "yes" ) {
-  //  location.replace("python.html");}
-  //
-  // if (friends === "yes" && pink ==="yes") {
-  //   location.replace("java.html");
-  // };
+  if (friends === "yes" && pink ==="yes") {
+    location.replace("java.html");
+  };
   if (closet === "no" && friends === "no"){
     location.replace("javascript.html");
-  } else {location.replace("ruby.html");}
+  } else {
+    location.replace("ruby.html");};
 
 
 
