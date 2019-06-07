@@ -1,3 +1,12 @@
 #main {
-  background-color: ;
+  background-color: #fea49f;
+}
+
+.jumbotron {
+  background-color: #101357;
+  color: white;
+}
+
+img {
+  width: 40%;
 }
