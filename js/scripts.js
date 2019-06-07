@@ -1,6 +1,6 @@
 $(document).ready(function(){
-  $("#questions").submit.(function(event){
-    print("how are you");
+  $("#questions").submit(function(event){
+    var personality = $
 
 
 
