@@ -12,26 +12,23 @@ $(document).ready(function(){
 
   var pink=  $("input[type=radio][name=color]:checked" ).val();
 
-
-  if (personality === "yes" && closet === "yes" ) {
-   location.replace("python.html");}
-
-  if (friends === "yes" && pink ==="yes") {
+  if (personality == null || closet == null || term == null|| friends == null || pink == null){
+    alert("You have to answer all the questions!")
+  }else if (personality === "yes" && closet === "yes" ) {
+   location.replace("python.html");
+  }else if (friends === "yes" && pink ==="yes") {
     location.replace("java.html");
-  };
-  if (closet === "no" && friends === "no"){
+  }else if (closet === "no" && friends === "no"){
     location.replace("javascript.html");
-  } else {
+  }else {
     location.replace("ruby.html");};
-
-
 
     event.preventDefault();
   });
 });
 
 
-
+//
 // $(document).ready(function(){
 //   $("#questions").submit(function(event){
 //
@@ -46,34 +43,30 @@ $(document).ready(function(){
 //
 //   var pink=  $("input[type=radio][name=color]:checked" ).val();
 //
-//   if (personality === "yes" && closet === "yes" ){
+//     if (personality == null || closet == null || term == null|| friends == null || pink == null){
+//       alert("You have to answer all the questions!")
+//     }else if (personality === "yes" && closet === "yes" ){
 //       $("#python").show();
 //       $("#ruby").hide();
 //       $("#java").hide();
 //       $("#javascript").hide();
-//     };
-//
-//    if (friends === "yes" && pink ==="yes"){
+//     }else if (friends === "yes" && pink ==="yes"){
 //      $("#java").show();
 //      $("#ruby").hide();
 //      $("#python").hide();
 //      $("#javascript").hide();
-//    };
-//
-//    if (closet === "no" && friends === "no"){
+//    }else if (closet === "no" && friends === "no"){
 //      $("#javascript").show();
 //      $("#ruby").hide();
 //      $("#java").hide();
 //      $("#python").hide();
-//    };
-//
-//    if else {
+//    } else {
 //       $("#ruby").show();
 //       $("#python").hide();
 //       $("#java").hide();
 //       $("#javascript").hide();
 //     };
-//
+// 
 //
 //     event.preventDefault();
 //   });
