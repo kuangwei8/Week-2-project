@@ -12,8 +12,9 @@ $(document).ready(function(){
 
   var pink=  $("input[type=radio][name=color]:checked" ).val();
 
-
-  if (personality === "yes" && closet === "yes" ) {
+  if (personality == null || closet == null || term == null || friends == null || pink == null ){
+    alert("You need to answer all the questions!");
+  }else if (personality === "yes" && closet === "yes" ) {
    location.replace("python.html");
   }else if (friends === "yes" && pink ==="yes") {
     location.replace("java.html");
