@@ -14,17 +14,14 @@ $(document).ready(function(){
 
 
   if (personality === "yes" && closet === "yes" ) {
-   location.replace("python.html");}
-
-  if (friends === "yes" && pink ==="yes") {
+   location.replace("python.html");
+  }else if (friends === "yes" && pink ==="yes") {
     location.replace("java.html");
-  };
-  if (closet === "no" && friends === "no"){
+  }else if (closet === "no" && friends === "no"){
     location.replace("javascript.html");
-  } else {
-    location.replace("ruby.html");};
-
-
+  }else {
+    location.replace("ruby.html");
+  };
 
     event.preventDefault();
   });
